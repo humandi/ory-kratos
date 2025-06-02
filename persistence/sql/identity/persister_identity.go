@@ -250,7 +250,7 @@ func (p *IdentityPersister) FindIdentityByWebauthnUserHandle(ctx context.Context
 
 	var jsonPath string
 	switch p.GetConnection(ctx).Dialect.Name() {
-	case "sqlite", "mysql":
+	case "libsql", "sqlite", "mysql":
 		jsonPath = "$.user_handle"
 	default:
 		jsonPath = "user_handle"
@@ -808,7 +808,7 @@ func identifiersTableNameWithIndexHint(con *pop.Connection) string {
 	switch con.Dialect.Name() {
 	case "cockroach":
 		ici += "@identity_credential_identifiers_ici_nid_i_idx"
-	case "sqlite3":
+	case "libsql", "sqlite3":
 		ici += " INDEXED BY identity_credential_identifiers_ici_nid_i_idx"
 	case "mysql":
 		ici += " USE INDEX(identity_credential_identifiers_ici_nid_i_idx)"

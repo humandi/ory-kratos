@@ -2,5 +2,9 @@
     "gopls": {
         "formatting.gofumpt": true,
         "formatting.local": "github.com/ory"
+    },
+    "go.goroot": "/Users/danielblignaut/sdk/go1.24.1",
+    "go.alternateTools": {
+        "go": "/Users/danielblignaut/sdk/go1.24.1/bin/go"
     }
 }

@@ -16,6 +16,8 @@ replace (
 	// Use the internal httpclient which can be generated in this codebase but mark it as the
 	// official SDK, allowing for the Ory CLI to consume Ory Kratos' CLI commands.
 	github.com/ory/client-go => ./internal/client-go
+
+	github.com/ory/x => ../x
 )
 
 require (
@@ -160,6 +162,7 @@ require (
 	github.com/t-k/fluent-logger-golang v1.0.0 // indirect
 	github.com/tinylib/msgp v1.2.5 // indirect
 	github.com/toqueteos/webbrowser v1.2.0 // indirect
+	github.com/tursodatabase/libsql-client-go v0.0.0-20240902231107-85af5b9d094d // indirect
 	github.com/yuin/gopher-lua v1.1.1 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect

@@ -23,7 +23,7 @@ var _ sessiontokenexchange.Persister = new(Persister)
 func updateLimitClause(conn *pop.Connection) string {
 	// Not all databases support limiting in update clauses.
 	switch conn.Dialect.Name() {
-	case "sqlite3", "postgres":
+	case "libsql", "sqlite3", "postgres":
 		return ""
 	default:
 		return "LIMIT 1"
