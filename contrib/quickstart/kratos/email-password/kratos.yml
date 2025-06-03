@@ -1,6 +1,6 @@
 version: v0.13.0
 
-dsn: sqlite://127.0.0.1:8080
+dsn: libsql://127.0.0.1:8080
 
 serve:
   public:
