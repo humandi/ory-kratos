@@ -6,20 +6,23 @@ toolchain go1.24.3
 
 replace (
 	github.com/go-swagger/go-swagger => github.com/aeneasr/go-swagger v0.19.1-0.20241013070044-bccef3a12e26 // See https://github.com/go-swagger/go-swagger/issues/3131
-	// github.com/gobuffalo/pop/v6 => ../gobuffalo-pop
+	// github.com/go-webauthn/webpopauthn => github.com/go-webauthn/webauthn v0.11.2
+	// github.com/gobuffalo/pop/v6 => github.com/ory/pop/v6 v6.2.1-0.20241121111754-e5dfc0f3344b
+	// github.com/gobuffalo/pop/v6 => ../ory-pop
+	github.com/gobuffalo/pop/v6 => github.com/humandi/ory-pop/v6 v6.2.0
 	// github.com/go-swagger/go-swagger => ../../go-swagger/go-swagger
 	// https://github.com/gobuffalo/pop/pull/833
-	github.com/gobuffalo/pop/v6 => github.com/ory/pop/v6 v6.2.0
 
 	github.com/gorilla/sessions => github.com/ory/sessions v1.2.2-0.20220110165800-b09c17334dc2
-	github.com/jmoiron/sqlx => ../jmoiron-sqlx
+	// github.com/jmoiron/sqlx => ../jmoiron-sqlx
+	github.com/jmoiron/sqlx => github.com/humandi/jmoiron-sqlx v1.4.0
 
 	// Use the internal httpclient which can be generated in this codebase but mark it as the
 	// official SDK, allowing for the Ory CLI to consume Ory Kratos' CLI commands.
 	github.com/ory/client-go => ./internal/client-go
 
-	github.com/ory/x => ../ory-x
-
+	// github.com/ory/x => ../ory-x
+	github.com/ory/x => github.com/humandi/ory-x v0.0.660
 )
 
 require (
@@ -114,17 +117,19 @@ require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
 	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137 // indirect
+	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/bmatcuk/doublestar v1.3.4 // indirect
+	github.com/coder/websocket v1.8.12 // indirect
 	github.com/cortesi/moddwatch v0.1.0 // indirect
 	github.com/cortesi/termlog v0.0.0-20210222042314-a1eec763abec // indirect
-	github.com/dgraph-io/ristretto/v2 v2.1.0 // indirect
+	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
 	github.com/jackc/pgx/v5 v5.7.2 // indirect
 	github.com/klauspost/compress v1.17.11 // indirect
-	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/moby/sys/user v0.3.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/rjeczalik/notify v0.9.3 // indirect
+	github.com/tursodatabase/libsql-client-go v0.0.0-20240902231107-85af5b9d094d // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	golang.org/x/term v0.30.0 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6 // indirect
@@ -256,6 +261,7 @@ require (
 	github.com/mailru/easyjson v0.9.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-sqlite3 v2.0.3+incompatible // indirect
 	github.com/microcosm-cc/bluemonday v1.0.27 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
