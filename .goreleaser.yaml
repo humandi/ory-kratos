@@ -16,9 +16,9 @@ release:
     owner: humandi
     name: ory-kratos
 
-archives:
-  - files:
-      - assets
+# archives:
+#   - files:
+#       - assets
 
 checksum:
   name_template: 'checksums.txt'
