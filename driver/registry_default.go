@@ -612,6 +612,8 @@ func (m *RegistryDefault) CanHandle(dsn string) bool {
 		strings.HasPrefix(dsn, "sqlite") ||
 		strings.HasPrefix(dsn, "sqlite3") ||
 		strings.HasPrefix(dsn, "libsql") ||
+		strings.HasPrefix(dsn, "http") ||
+		strings.HasPrefix(dsn, "https") ||
 		strings.HasPrefix(dsn, "postgres") ||
 		strings.HasPrefix(dsn, "postgresql") ||
 		strings.HasPrefix(dsn, "cockroach") ||
