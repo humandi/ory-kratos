@@ -1,0 +1,37 @@
+version: 2
+
+project_name: openfga
+
+before:
+  hooks:
+    - make generate-mocks
+
+builds:
+  -
+    main: ./main.go
+    binary: ory-kratos
+    goos:
+      - linux
+      - windows
+      - darwin
+release:
+  github:
+    owner: humandi
+    name: ory-kratos
+
+archives:
+  - files:
+      - assets
+
+checksum:
+  name_template: 'checksums.txt'
+
+snapshot:
+  name_template: "{{ incpatch .Version }}-next"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
