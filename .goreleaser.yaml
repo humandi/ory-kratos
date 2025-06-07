@@ -4,13 +4,13 @@ project_name: ory-kratos
 
 
 builds:
-  -
-    main: ./main.go
+  - main: ./main.go
     binary: ory-kratos
     goos:
       - linux
       - windows
       - darwin
+    tags: sqlite
 release:
   github:
     owner: humandi
