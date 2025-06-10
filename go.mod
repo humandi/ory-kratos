@@ -22,7 +22,7 @@ replace (
 	github.com/ory/client-go => ./internal/client-go
 
 	// github.com/ory/x => ../ory-x
-	github.com/ory/x => github.com/humandi/ory-x v0.0.100660
+	github.com/ory/x => github.com/humandi/ory-x v0.0.100661
 )
 
 require (

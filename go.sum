@@ -407,8 +407,8 @@ github.com/humandi/jmoiron-sqlx v1.4.100000 h1:dsjChM+r/j2GK0PgwpRjCzI868xdOuuBu
 github.com/humandi/jmoiron-sqlx v1.4.100000/go.mod h1:dbko4/vNfGRFaTCpACNFf+9WYIq7cPMhnut+nCiX3/I=
 github.com/humandi/ory-pop/v6 v6.2.100000 h1:tZZ3nc6oz5gVwQnmB7pOp95GBl7mF+tklM5xwSuKkFQ=
 github.com/humandi/ory-pop/v6 v6.2.100000/go.mod h1:s30WJh7Rh+MK70Dx+ms7G8pGN0sKDid5A3fWKeRi+Xw=
-github.com/humandi/ory-x v0.0.100660 h1:5d49YUNMptvgwdjVZ/MCLFhxrxDPGwIuzaSXPJmI7Ng=
-github.com/humandi/ory-x v0.0.100660/go.mod h1:36Ghn9p4u6IhooT/gbk9HywRfmtDTdot2sa58pBaWK4=
+github.com/humandi/ory-x v0.0.100661 h1:ySG0olIgswhIJLE6lt7J9HUQTzrT2ZdNsht2R7e9cQ0=
+github.com/humandi/ory-x v0.0.100661/go.mod h1:36Ghn9p4u6IhooT/gbk9HywRfmtDTdot2sa58pBaWK4=
 github.com/ian-kent/envconf v0.0.0-20141026121121-c19809918c02 h1:dU8zq210pt1b71X8xh9GOxC7uBHNtQ9BYC+Lb6SA/mA=
 github.com/ian-kent/envconf v0.0.0-20141026121121-c19809918c02/go.mod h1:1m5fo3aKG2moYtGHC4I2nFkXmG97+vCeaEIWC+mXTSI=
 github.com/ian-kent/go-log v0.0.0-20160113211217-5731446c36ab h1:OgrFrYWlVzY7Tc8rq7Y4ErlKo28igc70gbfJGTVWTJk=
