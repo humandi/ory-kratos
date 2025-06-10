@@ -9,20 +9,20 @@ replace (
 	// github.com/go-webauthn/webpopauthn => github.com/go-webauthn/webauthn v0.11.2
 	// github.com/gobuffalo/pop/v6 => github.com/ory/pop/v6 v6.2.1-0.20241121111754-e5dfc0f3344b
 	// github.com/gobuffalo/pop/v6 => ../ory-pop
-	github.com/gobuffalo/pop/v6 => github.com/humandi/ory-pop/v6 v6.2.0
+	github.com/gobuffalo/pop/v6 => github.com/humandi/ory-pop/v6 v6.2.100000
 	// github.com/go-swagger/go-swagger => ../../go-swagger/go-swagger
 	// https://github.com/gobuffalo/pop/pull/833
 
 	github.com/gorilla/sessions => github.com/ory/sessions v1.2.2-0.20220110165800-b09c17334dc2
 	// github.com/jmoiron/sqlx => ../jmoiron-sqlx
-	github.com/jmoiron/sqlx => github.com/humandi/jmoiron-sqlx v1.4.0
+	github.com/jmoiron/sqlx => github.com/humandi/jmoiron-sqlx v1.4.100000
 
 	// Use the internal httpclient which can be generated in this codebase but mark it as the
 	// official SDK, allowing for the Ory CLI to consume Ory Kratos' CLI commands.
 	github.com/ory/client-go => ./internal/client-go
 
 	// github.com/ory/x => ../ory-x
-	github.com/ory/x => github.com/humandi/ory-x v0.0.661
+	github.com/ory/x => github.com/humandi/ory-x v0.0.100660
 )
 
 require (
@@ -308,7 +308,7 @@ require (
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/xtgo/uuid v0.0.0-20140804021211-a0b114877d4c // indirect
-	go.mongodb.org/mongo-driver v1.17.3 // indirect
+	go.mongodb.org/mongo-driver v1.17.4 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace v0.60.0 // indirect
 	go.opentelemetry.io/contrib/propagators/b3 v1.35.0 // indirect
 	go.opentelemetry.io/contrib/propagators/jaeger v1.35.0 // indirect
